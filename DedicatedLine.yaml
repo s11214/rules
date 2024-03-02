@@ -1,0 +1,3 @@
+payload:
+  # > DedicatedLine
+  - DOMAIN-SUFFIX,ns1.name
