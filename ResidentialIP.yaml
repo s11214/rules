@@ -1,3 +1,4 @@
 payload:
+  # > ResidentialIP
   - DOMAIN-SUFFIX,ip2world.com
   - DOMAIN-SUFFIX,ip2world.vip
