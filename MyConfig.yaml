@@ -306,12 +306,9 @@ proxy-groups:
   - DIRECT
 - name: AdBlock
   type: select
-  use:
-  - HongKong
-  - Japan
-  - USA
   proxies:
   - Proxy
+  - REJECT
   - DIRECT
 rules:
   - 'RULE-SET, Reject, AdBlock'
