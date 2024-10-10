@@ -1,0 +1,25 @@
+payload:
+# > ResidentialIP
+- DOMAIN-SUFFIX,ip2world.com
+- DOMAIN-SUFFIX,ip2world.vip
+- DOMAIN-SUFFIX,abcproxy.com
+- DOMAIN-SUFFIX,abcproxy.vip
+- DOMAIN-SUFFIX,ixbrowser.com
+- DOMAIN-SUFFIX,renzhe.cloud
+- DOMAIN-SUFFIX,browserleaks.com
+- DOMAIN-SUFFIX,limaopay.com
+- DOMAIN-SUFFIX,temu.com
+- DOMAIN-SUFFIX,ipweb.cc
+- DOMAIN-SUFFIX,glitch.me
+- DOMAIN-SUFFIX,glitch.com
+- DOMAIN-SUFFIX,911proxy.com
+- DOMAIN-SUFFIX,ipweb.cc
+- DOMAIN-SUFFIX,kakaku.com
+- DOMAIN-SUFFIX,x.com
+- DOMAIN-SUFFIX,twitter.com
+- DOMAIN-SUFFIX,bgp.he.net
+- DOMAIN-SUFFIX,922proxy.com
+- IP-CIDR,43.130.44.204/32,no-resolve
+- IP-CIDR,49.51.192.24/32,no-resolve
+- IP-CIDR,126.75.168.225/32,no-resolve
+- IP-CIDR,126.11.95.226/32,no-resolve
