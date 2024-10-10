@@ -1,0 +1,22 @@
+payload:
+# > DedicatedLine
+- DOMAIN-SUFFIX,api.mercari.jp
+- DOMAIN-SUFFIX,auth.mercari.com
+- DOMAIN-SUFFIX,mercari-shops.com
+- DOMAIN-SUFFIX,jp.mercari.com
+- DOMAIN-SUFFIX,static.mercdn.net
+- DOMAIN-SUFFIX,assets.mercari-shops-static.com
+- DOMAIN-SUFFIX,tobansyoji.co.jp
+- DOMAIN-SUFFIX,kuronekoyamato.co.jp
+- DOMAIN-SUFFIX,sagawa-exp.co.jp
+- DOMAIN-SUFFIX,japanpost.jp
+- DOMAIN-SUFFIX,lepeelorganics.jp
+- DOMAIN-KEYWORD,mercari-shops
+- DOMAIN-KEYWORD,mercari.jp
+- DOMAIN-KEYWORD,jp.mercari
+- DOMAIN-KEYWORD,mercdn
+- DOMAIN,jp.mercari.com
+- DOMAIN,api.mercari.jp
+- DOMAIN,mercari-shops.com
+- DOMAIN,assets.mercari-shops-static.com
+- DOMAIN,web-jp-assets-v2.mercdn.net
