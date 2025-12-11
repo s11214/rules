@@ -8,13 +8,6 @@ payload:
   - DOMAIN-SUFFIX,ipinfo.io
   - DOMAIN-SUFFIX,ifconfig.me
   
-  # > Cloudflare
-  - DOMAIN-SUFFIX,static.cloudflareinsights.com
-  - DOMAIN-SUFFIX,argotunnel.com
-  - DOMAIN-SUFFIX,onetrust.com
-  - IP-CIDR,198.41.200.0/24
-  
-  
   # > 日程部署项目
   - DOMAIN-SUFFIX,cal.com
   
@@ -183,3 +176,4 @@ payload:
   # Creative
 
   - DOMAIN-SUFFIX,creative.com
+
