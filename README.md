@@ -15,6 +15,27 @@
 
 ---
 
+## ⚙ 插件设置建议
+
+* **运行模式**：`redir-Host (TUN)` 模式
+* **本地 DNS 劫持**：使用 `Dnsmasq` 转发
+* **GeoIP 数据库**：
+
+  * 默认使用 **GeoIP MMDB**（加载速度快）
+  * Geo 数据库订阅更新时：
+
+    * **Alecthw-Version**（全部国家 + 官方全部信息） → 支持 US、TW、HK、JP 等
+    * **Alecthw-lite-Version**（默认，全部国家，仅包含 iso_code 和 geoname_id） → 仅支持 GeoIP:CN
+* **覆写设置**：
+
+  * 保留 Meta 设置中的：
+
+    * **启用 TCP 并发**
+    * **启用统一延迟**
+  * 其他覆写选项全部关闭
+
+---
+
 ## 📁 规则来源与结构
 
 ### 主体规则
@@ -83,4 +104,9 @@ miHoYo:
 * 你可以直接在 GitHub 上修改规则文件（YAML）
 * RAW 链接会让 OpenClash 自动读取最新内容
 * 无需重新上传或打包
+
+好的，我帮你把这些内容整合进 README，补充成**完整的 OpenClash 配置说明**，条理清楚、方便别人快速理解和使用。
+
+---
+
 
