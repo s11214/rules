@@ -24,7 +24,7 @@
   * 默认使用 **GeoIP MMDB**（加载速度快）
   * Geo 数据库订阅更新时：
 
-    * **Alecthw-Version**（全部国家 + 官方全部信息） → 支持 US、TW、HK、JP 等
+    * **Alecthw-Version**（全部国家 + 官方全部信息） → 支持 US、TW、HK、JP 等国家以及地区
     * **Alecthw-lite-Version**（默认，全部国家，仅包含 iso_code 和 geoname_id） → 仅支持 GeoIP:CN
 * **覆写设置**：
 
