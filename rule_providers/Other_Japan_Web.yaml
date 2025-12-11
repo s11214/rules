@@ -41,6 +41,7 @@ payload:
   # > 📰 新闻/门户
   - DOMAIN-SUFFIX,tabtter.jp
   - DOMAIN-SUFFIX,news.livedoor.com
+  - DOMAIN-SUFFIX,kuku.lu
 
   # > 🏢 企业服务
   - DOMAIN-SUFFIX,tokyocn.com
@@ -79,4 +80,5 @@ payload:
   - IP-CIDR,160.16.0.0/13,no-resolve
   - IP-CIDR,182.236.0.0/15,no-resolve
   - IP-CIDR,203.183.0.0/16,no-resolve
+
   - IP-CIDR6,2400:2410::/32,no-resolve
