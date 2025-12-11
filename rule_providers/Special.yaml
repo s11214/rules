@@ -156,12 +156,6 @@ payload:
   # > UBI
   - DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
   
-  # > 全球CDN
-  - DOMAIN-SUFFIX,creativecdn.com
-  - DOMAIN-SUFFIX,jsdelivr.net
-  - DOMAIN-SUFFIX,jsdelivr.com
-  - DOMAIN-SUFFIX,akamaized.net
-  
   # > CookieYes
   - DOMAIN-KEYWORD,cookieyes
   
@@ -187,4 +181,5 @@ payload:
   - DOMAIN-SUFFIX,zi-scripts.com
   
   # Creative
+
   - DOMAIN-SUFFIX,creative.com
