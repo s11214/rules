@@ -1,6 +1,0 @@
-payload:
-  # > Fox+ (HK|TW|SG)
-  # - USER-AGENT,FOXPlus*
-  - DOMAIN-KEYWORD,foxplus
-  - DOMAIN-SUFFIX,foxplus.com
-  - DOMAIN-SUFFIX,theplatform.com
