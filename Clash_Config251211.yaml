@@ -5,7 +5,7 @@ p: &p {type: http, interval: 3600, health-check: {enable: true, url: https://www
 use: &use
   type: select
   use:
-  - xxx
+  - xxx  # 机场名称
   
 port: 7890
 socks-port: 7891
@@ -69,8 +69,8 @@ dns:
 proxy-providers:
   xxx:
     <<: *p
-    url: "https://xxx.xxx"
-    path: ./proxy_providers/xxx.yaml
+    url: "https://xxx.xxx"    # 订阅URL
+    path: ./proxy_providers/xxx.yaml  # 保存位置
 
 proxy-groups:
   - {name: 香港, <<: *use,filter: "(?i)港|香港|hk|hongkong|hong kong|🇭🇰"}
@@ -356,4 +356,5 @@ rule-providers:
   PROXY: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/PROXY.yaml', path: ./Rules/PROXY, interval: 86400 }
   Domestic: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Domestic.yaml', path: ./Rules/Domestic, interval: 86400 }
   LAN: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/LAN.yaml', path: ./Rules/LAN, interval: 86400 }
+
 
