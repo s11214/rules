@@ -1,4 +1,4 @@
-# OpenClash 自定义规则rule-providers配置说明
+# OpenClash 自定义规则rule providers配置说明
 
 本仓库提供一套基于 **OpenClash** 的规则与 rule-providers 配置，你只需要 **更换订阅链接** 即可使用。整体结构与常见公共规则兼容，核心部分参考 **Dler Cloud** 的规则，并在此基础上根据实际需求做了补充与调整。
 
