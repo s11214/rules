@@ -1,0 +1,20 @@
+payload:
+  # 虚拟机克隆服务器
+  - DOMAIN-SUFFIX,vm.698138.xyz
+  - DOMAIN-SUFFIX,328138.xyz
+  
+  - DOMAIN-SUFFIX,seller.kuajingmaihuo.com
+  - DOMAIN-SUFFIX,kuajingmaihuo.com
+  
+  # 邮件服务器
+  - DOMAIN,imap.mail.yahoo.com
+  - DOMAIN,imap.aol.com
+  
+  # 代理
+  - DOMAIN-SUFFIX,fxdx.in
+  
+  # Channel Talk
+  - DOMAIN-SUFFIX,channel.io
+  
+  # 不知道哪来的
+  - DOMAIN-SUFFIX,yangliq.com

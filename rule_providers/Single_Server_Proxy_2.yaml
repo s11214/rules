@@ -1,0 +1,3 @@
+payload:
+  - IP-CIDR,43.130.57.38/32,no-resolve  # lumi
+  - IP-CIDR,138.2.16.164/32,no-resolve  # 小明专线

@@ -1,0 +1,80 @@
+payload:
+  # > 🎁 楽天 (Rakuten)
+  - DOMAIN-SUFFIX,rakuten.co.jp
+  - DOMAIN-SUFFIX,rakuten-static.com
+  - DOMAIN-SUFFIX,rakuten-card.co.jp
+  - DOMAIN-SUFFIX,rakuten-bank.co.jp
+  - DOMAIN-SUFFIX,rakuten-sec.net
+  - DOMAIN-SUFFIX,rakuten-image.jpn.com
+  - DOMAIN-SUFFIX,rtmail.rakuten.co.jp
+  - DOMAIN-KEYWORD,rakuten
+  
+  # > 🛒 Qoo10
+  - DOMAIN-SUFFIX,qoo10.jp
+  - DOMAIN-SUFFIX,qoo10.jpimg.com
+  - DOMAIN-SUFFIX,qoo10.kr
+  - DOMAIN-SUFFIX,qoo10img.com
+  
+  # > 📦 Yahoo!ショッピング / ヤフオク
+  - DOMAIN-SUFFIX,yahoo.co.jp
+  - DOMAIN-SUFFIX,yahoo-shopping.net
+  - DOMAIN-SUFFIX,yimg.jp
+  - DOMAIN-SUFFIX,yjtag.jp
+  - DOMAIN-SUFFIX,yahooapis.jp
+  
+  # > 🏪 Mercari (メルカリ)
+  - DOMAIN-SUFFIX,mercari.com
+  - DOMAIN-SUFFIX,mercari.jp
+  - DOMAIN-SUFFIX,mercari-jp.com
+  - DOMAIN,jp.mercari.com
+  - DOMAIN,api.mercari.jp
+  - DOMAIN,mercari-shops.com
+  - DOMAIN,assets.mercari-shops-static.com
+  - DOMAIN,web-jp-assets-v2.mercdn.net
+  - DOMAIN-SUFFIX,jp.mercari.com
+  - DOMAIN-SUFFIX,static.mercdn.net
+  - DOMAIN-SUFFIX,assets.mercari-shops-static.com
+  - DOMAIN-KEYWORD,mercdn
+  
+  # > 🛍️ ZOZOTOWN
+  - DOMAIN-SUFFIX,zozo.jp
+  - DOMAIN-SUFFIX,zozo.com
+  - DOMAIN-SUFFIX,zozoimg.com
+  
+  # > 📱 LINE Shopping
+  - DOMAIN-SUFFIX,line.me
+  - DOMAIN-SUFFIX,shopping.line.me
+  
+  # > 👕 UNIQLO Japan
+  - DOMAIN-SUFFIX,uniqlo.com
+  - DOMAIN-SUFFIX,fastretailing.com
+  
+  # > 👗 GU Japan
+  - DOMAIN-SUFFIX,gu-global.com
+  - DOMAIN-SUFFIX,gu-jp.com
+  
+  # > 🎵 Tower Records
+  - DOMAIN-SUFFIX,tower.jp
+  - DOMAIN-SUFFIX,towerrecords.co.jp
+  
+  # > 📚 Kinokuniya
+  - DOMAIN-SUFFIX,kinokuniya.co.jp
+  
+  # > 🎁 Bic Camera
+  - DOMAIN-SUFFIX,biccamera.com
+  
+  # > 🖥️ Yodobashi
+  - DOMAIN-SUFFIX,yodobashi.com
+  
+  # > 💳 PayPay
+  - DOMAIN-SUFFIX,paypay.ne.jp
+  
+  # > 🚚 物流/支付
+  - DOMAIN-SUFFIX,nttdocomo.co.jp
+  
+  # > 🛒 kakaku
+  - DOMAIN-SUFFIX,kakaku.com
+  
+  # > 🛒 比价
+  - DOMAIN-SUFFIX,mobile-ichiban.com
+  - DOMAIN-SUFFIX,tobansyoji.co.jp

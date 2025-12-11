@@ -1,0 +1,32 @@
+payload:
+  # 🌍 其他地区亚马逊 Prime Video
+  - DOMAIN-SUFFIX,atv-ext-eu.amazon.com
+  - DOMAIN-SUFFIX,atv-ps-eu.amazon.co.uk     # 英国
+  - DOMAIN-SUFFIX,amazon.co.uk               # 英国
+  - DOMAIN-SUFFIX,primevideo.co.uk           # 英国
+  
+  # 🇮🇳 印度
+  - DOMAIN-SUFFIX,amazon.in
+  - DOMAIN-SUFFIX,primevideo.in
+  
+  # 🇩🇪 德国
+  - DOMAIN-SUFFIX,amazon.de
+  - DOMAIN-SUFFIX,primevideo.de
+  
+  # 🇫🇷 法国
+  - DOMAIN-SUFFIX,amazon.fr
+  - DOMAIN-SUFFIX,primevideo.fr
+  
+  # 🇮🇹 意大利
+  - DOMAIN-SUFFIX,amazon.it
+  - DOMAIN-SUFFIX,primevideo.it
+  
+  # 🇪🇸 西班牙
+  - DOMAIN-SUFFIX,amazon.es
+  - DOMAIN-SUFFIX,primevideo.es
+  
+  # 🏴 澳洲/加拿大
+  - DOMAIN-SUFFIX,amazon.com.au
+  - DOMAIN-SUFFIX,primevideo.com.au
+  - DOMAIN-SUFFIX,amazon.ca
+  - DOMAIN-SUFFIX,primevideo.ca

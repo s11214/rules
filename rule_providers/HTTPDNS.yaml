@@ -1,0 +1,174 @@
+payload:
+  # ===== 微信/企业微信 =====
+  - DOMAIN,dns.weixin.qq.com
+  - DOMAIN,dns.weixin.qq.com.cn
+  - DOMAIN,httpdns.tencent.com
+  - DOMAIN,httpdns.wechat.com
+  - DOMAIN,httpdns.wechat.qq.com
+  - DOMAIN,httpdns.wx.qq.com
+  - DOMAIN,httpdns-weixin.qq.com
+  - DOMAIN,httpdns.weixin.qq.com
+  
+  # 微信HTTPDNS IP
+  - IP-CIDR,42.81.232.18/32,no-resolve
+  - IP-CIDR,42.187.182.106/32,no-resolve
+  - IP-CIDR,42.187.182.123/32,no-resolve
+  - IP-CIDR,42.187.184.154/32,no-resolve
+  - IP-CIDR,123.151.54.50/32,no-resolve
+  - IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve
+  - IP-CIDR6,240e:928:1400:10::25/128,no-resolve
+  
+  # 企业微信
+  - IP-CIDR,182.254.116.117/32,no-resolve
+  - IP-CIDR,182.254.118.119/32,no-resolve
+
+  # ===== Alibaba =====
+  - DOMAIN,httpdns.alicdn.com
+  - DOMAIN,httpdns-api.aliyuncs.com
+  - DOMAIN,httpdns-sc.aliyuncs.com
+  - DOMAIN,httpdns.tbsite.net
+  - DOMAIN,httpdns.taobao.com
+  - DOMAIN,mdap.alipay.com
+  - IP-CIDR,203.107.1.0/24,no-resolve
+
+  # ===== Baidu =====
+  - DOMAIN,httpsdns.baidu.com
+  - DOMAIN,httpdns.baidu.com
+  - DOMAIN,httpdns.baidubce.com
+  - DOMAIN,httpdns.map.baidu.com
+  - IP-CIDR,186.76.76.200/32,no-resolve
+
+  # ===== Bilibili =====
+  - DOMAIN,httpdns.bilivideo.com
+  - DOMAIN,httpdns.bilibili.com
+  - DOMAIN,httpdns.biliplus.cn
+
+  # ===== Huawei =====
+  - DOMAIN,httpdns.c.cdnhwc2.com
+  - DOMAIN,httpdns.appstore.hicloud.com
+  - DOMAIN,httpdns.file.hicloud.com
+  - DOMAIN,httpdns.map.hicloud.com
+
+  # ===== JD =====
+  - DOMAIN,dns.jd.com
+  - IP-CIDR,101.124.19.122/32,no-resolve
+  - IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
+  - IP-CIDR,103.224.222.208/32,no-resolve
+
+  # ===== Kuaishou =====
+  - DOMAIN,kuaishou.httpdns.pro
+  - DOMAIN,httpdns.kwaishou.com
+  - DOMAIN,httpdns.nearme.com.cn
+
+  # ===== Meituan =====
+  - DOMAIN,httpdns.meituan.com
+  - DOMAIN,httpdns.dianping.com
+
+  # ===== NetEase =====
+  - DOMAIN,httpdns.yunxindns.com
+  - DOMAIN,httpdns.n.netease.com
+  - DOMAIN,httpdns.music.163.com
+  - DOMAIN,music.httpdns.c.163.com
+  - DOMAIN,lofter.httpdns.c.163.com
+  - DOMAIN,httpdns.youdao.com
+  - IP-CIDR,59.111.239.61/32,no-resolve
+  - IP-CIDR,59.111.239.62/32,no-resolve
+  - IP-CIDR,115.236.121.51/32,no-resolve
+  - IP-CIDR,115.236.121.195/32,no-resolve
+
+  # ===== Oppo =====
+  - DOMAIN,httpdns.push.oppomobile.com
+
+  # ===== Vivo =====
+  - DOMAIN,httpdns.vivo.com.cn
+
+  # ===== Tencent Cloud =====
+  - IP-CIDR,119.29.29.98/32,no-resolve
+  - IP-CIDR,119.29.29.99/32,no-resolve
+
+  # ===== Volcengine (ByteDance) =====
+  - DOMAIN,httpdns.volcengineapi.com
+  - DOMAIN,httpdns.volcengine.com
+  - DOMAIN,httpdns.amemv.com
+  - DOMAIN,httpdns-hl.snssdk.com
+
+  # ===== Weibo =====
+  - DOMAIN,dns.weibo.cn
+  - IP-CIDR,39.97.128.148/32,no-resolve
+  - IP-CIDR,39.97.130.51/32,no-resolve
+
+  # ===== Zhihu =====
+  - IP-CIDR,118.89.204.198/23,no-resolve
+  - IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
+
+  # ===== 抖音/字节跳动（完整版） =====
+  - DOMAIN,httpdns.bytedance.com
+  - DOMAIN,httpdns.bytedns.com
+  - DOMAIN,dnsapi6.volcengineapi.com
+  - DOMAIN,httpdns.snssdk.com
+  - DOMAIN,dnsapi6.snssdk.com
+  - DOMAIN,httpdns.toutiao.com
+  - DOMAIN,httpdns.zijieapi.com
+  - IP-CIDR,43.240.6.0/24,no-resolve
+  - IP-CIDR,103.38.16.0/24,no-resolve
+  - IP-CIDR,103.129.232.0/24,no-resolve
+  - IP-CIDR,103.129.233.0/24,no-resolve
+  - IP-CIDR,103.186.168.0/24,no-resolve
+  - IP-CIDR,103.186.169.0/24,no-resolve
+  - IP-CIDR,103.186.170.0/24,no-resolve
+  - IP-CIDR,103.186.171.0/24,no-resolve
+  - IP-CIDR,114.116.48.0/24,no-resolve
+  - IP-CIDR,114.116.49.0/24,no-resolve
+  - IP-CIDR6,2409:8d1f:2100::/40,no-resolve
+
+  # ===== WPS/金山（完整版） =====
+  - DOMAIN,httpdns.wps.cn
+  - DOMAIN,dns.wps.cn
+  - DOMAIN,httpdns-ssl.wps.cn
+  - DOMAIN,dnsapi.wps.cn
+  - DOMAIN,httpdns-ssl-ipv6.wps.cn
+  - DOMAIN,httpdns-ipv6.wps.cn
+  - DOMAIN,httpdns.ksyun.com
+  - DOMAIN,dns.ks-yun.com
+  - DOMAIN,kyfw.wps.cn
+  - DOMAIN,wdoffice.wps.cn
+  - DOMAIN,httpdns.ks-cdn.com
+  - IP-CIDR,106.11.192.0/24,no-resolve
+  - IP-CIDR,114.247.48.0/24,no-resolve
+  - IP-CIDR,114.247.49.0/24,no-resolve
+  - IP-CIDR,119.188.120.0/24,no-resolve
+  - IP-CIDR,119.188.121.0/24,no-resolve
+  - IP-CIDR,180.153.112.0/24,no-resolve
+  - IP-CIDR,180.153.113.0/24,no-resolve
+  - IP-CIDR6,2408:4000::/32,no-resolve
+
+  # ===== 补充重要服务 =====
+  # 腾讯系
+  - DOMAIN,httpdns.qq.com
+  - DOMAIN,httpdns.txcdn.com
+
+  # 小米
+  - DOMAIN,httpdns.mi.com
+  - IP-CIDR,183.232.30.0/24,no-resolve
+  - DOMAIN,resolver.msg.xiaomi.net
+  - DOMAIN,resolver.gslb.mi-idc.com
+
+  # 华为
+  - DOMAIN,httpdns.hicloud.com
+
+  # 天翼 / 中国电信
+  - DOMAIN,httpdns.ctyun.cn
+  - DOMAIN,httpdns.189.cn
+
+  # 中国移动
+  - DOMAIN,httpdns.api.qcloud.com
+  - DOMAIN,httpdns.cmicr.cn
+
+  # 中国联通
+  - DOMAIN,httpdns.10010.com
+
+  # 拼多多
+  - DOMAIN,httpdns.pinduoduo.com
+
+  # QQ 浏览器
+  - DOMAIN,httpdns.browser.qq.com
