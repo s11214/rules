@@ -1,0 +1,22 @@
+payload:
+  # > 922等多服务器代理
+  - DOMAIN-SUFFIX,922proxy.com
+  
+  - DOMAIN-KEYWORD,proxy302
+  
+  - DOMAIN-KEYWORD,smartproxycn
+  - DOMAIN-KEYWORD,smartproxy
+  - DOMAIN-SUFFIX,smartproxycn.com
+  - DOMAIN-SUFFIX,as.smartproxycn.com
+  
+  - DOMAIN-KEYWORD,abcproxy
+  - DOMAIN-SUFFIX,abcproxy.com
+  - DOMAIN-SUFFIX,abcproxy.vip
+  
+  - DOMAIN-KEYWORD,ipfoxy
+  - DOMAIN-SUFFIX,ipfoxy.com
+  - DOMAIN-SUFFIX,ipfoxy.io
+  
+  - DOMAIN-KEYWORD,ip2world
+  - DOMAIN-SUFFIX,ip2world.com
+  - DOMAIN-SUFFIX,ip2world.vip

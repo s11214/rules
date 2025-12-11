@@ -1,0 +1,14 @@
+payload:
+  # 🇯🇵 日本亚马逊 Prime Video
+  - PROCESS-NAME,com.amazon.avod.thirdpartyclient  # 日本版APP
+  - DOMAIN-SUFFIX,atv-ps-fe.amazon.co.jp
+  - DOMAIN-SUFFIX,amazon.co.jp
+  - DOMAIN-SUFFIX,amazonvideo.co.jp
+  - DOMAIN-SUFFIX,atv-ext-fe.amazon.co.jp
+  - DOMAIN-SUFFIX,primevideo.co.jp
+  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net     # 日本CDN
+  - DOMAIN,d22qjgkvxw22r6.cloudfront.net     # 日本CDN
+  - DOMAIN,d25xi40x97liuc.cloudfront.net     # 日本CDN
+  - DOMAIN-SUFFIX,aiv-delivery-fe.amazon.co.jp
+  - DOMAIN-SUFFIX,pv-fe.amazon.co.jp
+  - DOMAIN-SUFFIX,amazonvideo-fe.amazon.co.jp

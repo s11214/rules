@@ -1,0 +1,8 @@
+payload:
+  - DOMAIN-SUFFIX,vm.698138.xyz
+  - DOMAIN-SUFFIX,328138.xyz
+  - DOMAIN-SUFFIX,seller.kuajingmaihuo.com
+  - DOMAIN-SUFFIX,kuajingmaihuo.com
+  - DOMAIN,imap.mail.yahoo.com
+  - DOMAIN,imap.aol.com
+  - DST-PORT,8080
