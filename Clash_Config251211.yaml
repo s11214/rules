@@ -1,0 +1,358 @@
+pr: &pr {type: select, proxies: [默认代理, 香港, 台湾, 日本, 新加坡, 美国, 其它地区, 自动选择, DIRECT]}
+
+p: &p {type: http, interval: 3600, health-check: {enable: true, url: https://www.gstatic.com/generate_204, interval: 300}}
+
+use: &use
+  type: select
+  use:
+  - BaiYueGuang
+  
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+geodata-mode: false
+unified-delay: true
+sniffer:
+  enable: true
+  override-destination: true
+  force-dns-mapping: false
+  parse-pure-ip: false
+  sniff:
+    TLS:
+      ports: [443, 8443, 9443]
+    HTTP:
+      ports: [80]
+  force-domain:
+    # 🔹 流媒体 / 广告 / 跨区服务（走代理）
+    - "+.netflix.com"
+    - "+.nflxvideo.net"
+    - "+.youtube.com"
+    - "+.googlevideo.com"
+    - "+.ytimg.com"             # YouTube 静态资源
+    - "+.disneyplus.com"
+    - "+.amazonaws.com"
+    - "+.media.dssott.com"
+    - "+.criteo.com"
+    - "+.criteo.net"
+    - "+.doubleclick.net"
+    - "+.ads-twitter.com"
+    - "bat.bing.com"
+
+  skip-domain:
+    # 🔹 国内服务 / 局域网 / IoT 设备（直连）
+    - "+.apple.com"
+    - "+.push.apple.com"
+    - "Mijia Cloud"
+    - "dlg.io.mi.com"
+    - "+.oray.com"
+    - "+.sunlogin.net"
+    - "+.xiaomi.com"
+    - "+.mi.com"
+    
+dns:
+  enable: true
+  listen: 0.0.0.0:7874
+  enhanced-mode: redir-host
+  ipv6: false
+  use-hosts: false
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - https://dns.alidns.com/dns-query
+
+proxy-providers:
+  BaiYueGuang:
+    <<: *p
+    url: "https://3TAcuAGaqY.solastme.cc/3cebc61a170542b1d837bb515ae9dae6"
+    path: ./proxy_providers/baiyueguang.yaml
+
+proxy-groups:
+  - {name: 香港, <<: *use,filter: "(?i)港|香港|hk|hongkong|hong kong|🇭🇰"}
+  - {name: 香港2, <<: *use,filter: "(?i)港|香港|hk|hongkong|hong kong|🇭🇰"}
+  - {name: 香港稳定连接, <<: *use, type: fallback, interval: 300, url: "https://www.gstatic.com/generate_204", filter: "(?i)港|hk|hongkong|hong kong|🇭🇰"}
+  - {name: 日本, <<: *use, filter: "(?i).*?(日本|jp|japan|🇯🇵)"}
+  - {name: 日本2, <<: *use, filter: "(?i).*?(日本|jp|japan|🇯🇵)"}
+  - {name: 日本稳定连接, <<: *use, type: fallback, interval: 300, url: "https://www.gstatic.com/generate_204", filter: "(?i)日本|jp|japan|🇯🇵"}
+  - {name: 台湾, <<: *use, filter: "(?i)台|台湾|tw|taiwan|🇹🇼|🇨🇳"}
+  - {name: 美国, <<: *use, filter: "(?i)美国|us|united states|unitedstates|🇺🇸|usa"}
+  - {name: 新加坡, <<: *use, filter: "(?i)新加坡|sg|singapore|狮城|🇸🇬"}
+  - {name: 其它地区, <<: *use, filter: "(?i)^(?!.*(?:traffic|expire|到期|流量|剩余|用量|hk|香港|🇭🇰|台湾|tw|taiwan|🇹🇼|🇨🇳|jp|japan|日本|🇯🇵|新加坡|sg|singapore|狮城|🇸🇬|美国|us|united states|🇺🇸|usa)).*"}
+  - {name: 默认代理, type: select, proxies: [香港, 直连, 香港稳定连接, 台湾, 日本稳定连接, 日本, 新加坡, 美国, 其它地区, 自动选择 ]}
+  - {name: 遗漏站点, type: select, proxies: [默认代理, 直连, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 多服务器代理, type: select, proxies: [香港, 香港2, 直连, 默认代理, 台湾, 日本稳定连接, 日本, 日本2, 新加坡, 美国, 其它地区]}
+  - {name: 单服务器代理1, type: select, proxies: [日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 美国, 其它地区]}
+  - {name: 单服务器代理2, type: select, proxies: [日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 美国, 其它地区]}
+  - {name: 单服务器代理3, type: select, proxies: [日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 美国, 其它地区]}
+  - {name: 日本物流, type: select, proxies: [日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 美国, 其它地区]}
+  - {name: AI相关, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 微软邮箱, type: select, proxies: [默认代理, 直连, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 其他日本站点, type: select, proxies: [日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 美国, 其它地区]}
+  - {name: 其他代理站点, type: select, proxies: [香港, 香港2, 直连, 默认代理, 台湾, 日本稳定连接, 日本, 日本2, 新加坡, 美国, 其它地区]}
+  - {name: 其他直连站点, type: select, proxies: [直连, 香港, 香港2, 默认代理, 台湾, 日本稳定连接, 日本, 日本2, 新加坡, 美国, 其它地区]}
+  - {name: 日本电商网站, type: select, proxies: [日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 美国, 其它地区]}
+  - {name: 日亚, type: select, proxies: [日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 美国, 其它地区]}
+  - {name: 美亚, type: select, proxies: [美国, 日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 其它地区]}
+  - {name: 其他亚马逊, type: select, proxies: [美国, 日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 其它地区]}
+  - {name: 苹果全球, type: select, proxies: [直连, 默认代理, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 苹果中国, type: select, proxies: [直连, 默认代理, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: Apple TV, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: Spotify, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: Max, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: YouTube, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: Disney Plus, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: Netflix, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 国际媒体, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 亚洲媒体, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 华语媒体, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 日本媒体, type: select, proxies: [日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 美国, 其它地区]}
+  - {name: 国内媒体, type: select, proxies: [直连, 默认代理]}
+  - {name: 米哈游, type: select, proxies: [直连, 默认代理]}
+  - {name: TikTok, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: Steam, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: Xbox, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 其他国外游戏, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: Scholar, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: Discord, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: Telegram, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 加密货币, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: Google FCM, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: PayPal, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 其他微软服务, type: select, proxies: [直连, 默认代理, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: Azure云服务, type: select, proxies: [直连, 默认代理, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 微软Office服务, type: select, proxies: [直连, 默认代理, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: 测速, type: select, proxies: [直连, 默认代理, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
+  - {name: HTTPDNS, type: select, proxies: [直连, 拦截, 默认代理]}
+  - {name: 国内站点, type: select, proxies: [直连, 默认代理]}
+  - {name: 广告屏蔽, type: select, proxies: [拦截, 直连, 默认代理]}
+  - {name: 自动选择, <<: *use, tolerance: 100, type: url-test, interval: 300, url: "https://www.gstatic.com/generate_204", filter: "(?i)^(?!.*(?:traffic|expire|到期|流量|剩余|用量)).*"}
+  - {name: 直连, type: select, proxies: [DIRECT]}
+  - {name: 拦截, type: select, proxies: [REJECT]}
+
+rules:
+  - RULE-SET,AdBlock,广告屏蔽
+  - RULE-SET,LAN,DIRECT
+  - RULE-SET,HTTPDNS,HTTPDNS
+  - RULE-SET,Special,DIRECT
+
+  - RULE-SET,Amazon JP,日亚
+  - RULE-SET,Amazon US,美亚
+  - RULE-SET,Amazon Other,其他亚马逊
+  
+  - RULE-SET,Japan Ecommerce,日本电商网站
+  
+  - RULE-SET,Japan Logistics,日本物流
+  
+  - RULE-SET,Other Japan Web,其他日本站点
+  
+  - RULE-SET,Multi Server Proxy,多服务器代理
+  
+  - RULE-SET,Single Server Proxy One,单服务器代理1
+  
+  - RULE-SET,Single Server Proxy Two,单服务器代理2
+  
+  - RULE-SET,Single Server Proxy Three,单服务器代理3
+  
+  - RULE-SET,Other Proxy,其他代理站点
+  
+  - RULE-SET,Other Direct,其他直连站点
+  
+  - RULE-SET,Netflix,Netflix
+  - RULE-SET,Disney Plus,Disney Plus
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,Max,Max
+  - RULE-SET,Spotify,Spotify
+
+  - RULE-SET,Abema TV,日本媒体
+  - RULE-SET,DMM,日本媒体
+  - RULE-SET,Hulu Japan,日本媒体
+  - RULE-SET,Japonx,日本媒体
+  - RULE-SET,Niconico,日本媒体
+  
+  - RULE-SET,Bahamut,华语媒体
+  - RULE-SET,Fox Plus,华语媒体
+  - RULE-SET,myTV SUPER,华语媒体
+  - RULE-SET,ViuTV,华语媒体
+  - RULE-SET,KKTV,华语媒体
+  
+  - RULE-SET,IQ,亚洲媒体
+  - RULE-SET,JOOX,亚洲媒体
+  - RULE-SET,KKBOX,亚洲媒体
+  - RULE-SET,Line TV,亚洲媒体
+
+  - RULE-SET,ABC,国际媒体
+  - RULE-SET,BBC iPlayer,国际媒体
+  - RULE-SET,DAZN,国际媒体
+  - RULE-SET,Discovery Plus,国际媒体
+  - RULE-SET,encoreTVB,国际媒体
+  - RULE-SET,F1 TV,国际媒体
+  - RULE-SET,Fox Now,国际媒体
+  - RULE-SET,Hulu,国际媒体
+  - RULE-SET,Pandora,国际媒体
+  - RULE-SET,PBS,国际媒体
+  - RULE-SET,Pornhub,国际媒体
+  - RULE-SET,Soundcloud,国际媒体
+
+  - RULE-SET,Bilibili,国内媒体
+  - RULE-SET,IQIYI,国内媒体
+  - RULE-SET,Letv,国内媒体
+  - RULE-SET,Netease Music,国内媒体
+  - RULE-SET,Tencent Video,国内媒体
+  - RULE-SET,WeTV,国内媒体
+  - RULE-SET,Youku,国内媒体
+  - RULE-SET,Domestic Media,国内媒体
+
+  - RULE-SET,Telegram,Telegram
+
+  - RULE-SET,Crypto,加密货币
+  - RULE-SET,Discord,Discord
+  - RULE-SET,Google FCM,Google FCM
+  
+  - RULE-SET,Microsoft Email,微软邮箱
+  - RULE-SET,Xbox,Xbox
+  - RULE-SET,Microsoft Office,微软Office服务
+  - RULE-SET,Microsoft Azure,Azure云服务
+  - RULE-SET,Microsoft Other,其他微软服务
+  
+  - RULE-SET,AI Suite,AI相关
+  - RULE-SET,PayPal,PayPal
+  - RULE-SET,Scholar,Scholar
+  - RULE-SET,Speedtest,测速
+  - RULE-SET,Steam,Steam
+  - RULE-SET,Global Games,其他国外游戏
+  - RULE-SET,TikTok,TikTok
+
+  - RULE-SET,Apple CN,苹果中国
+  - RULE-SET,iCloud CN,苹果中国
+  - RULE-SET,Apple Global,苹果全球
+  - RULE-SET,iCloud Global,苹果全球
+  - RULE-SET,Apple TV,Apple TV
+
+  - RULE-SET,miHoYo,米哈游
+
+  - RULE-SET,PROXY,默认代理
+
+  - RULE-SET,Domestic,国内站点
+  - GEOIP,CN,DIRECT
+  - GEOIP,JP,其他日本站点
+  - GEOIP,US,美国
+  - GEOIP,TW,台湾
+  - GEOIP,HK,香港
+  - MATCH,遗漏站点
+  
+rule-providers:
+  # 🔥 基础规则
+  AdBlock: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/AdBlock.yaml', path: ./Rules/AdBlock, interval: 86400 }
+  HTTPDNS: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/HTTPDNS.yaml', path: ./Rules/HTTPDNS, interval: 86400 }
+  Special: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Special.yaml', path: ./Rules/Special, interval: 86400 }
+  
+  # 🌍 亚马逊
+  "Amazon JP": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Amazon_JP.yaml', path: ./Rules/Amazon JP, interval: 86400 }
+  "Amazon US": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Amazon_US.yaml', path: ./Rules/Amazon US, interval: 86400 }
+  "Amazon Other": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Amazon_Global.yaml', path: ./Rules/Amazon Other, interval: 86400 }
+  
+  # 🇯🇵 日本
+  "Japan Ecommerce": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Japan_Ecommerce.yaml', path: ./Rules/Japan Ecommerce, interval: 86400 }
+  "Japan Logistics": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Japan_Logistics.yaml', path: ./Rules/Japan Logistics, interval: 86400 }
+  "Other Japan Web": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Other_Japan_Web.yaml', path: ./Rules/Other Japan Web, interval: 86400 }
+  
+  # 🖥️ 代理服务器
+  "Multi Server Proxy": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Multi_Server_Proxy.yaml', path: ./Rules/Multi Server Proxy, interval: 86400 }
+  "Single Server Proxy One": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Single_Server_Proxy_1.yaml', path: ./Rules/Single Server Proxy One, interval: 86400 }
+  "Single Server Proxy Two": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Single_Server_Proxy_2.yaml', path: ./Rules/Single Server Proxy Two, interval: 86400 }
+  "Single Server Proxy Three": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Single_Server_Proxy_3.yaml', path: ./Rules/Single Server Proxy Three, interval: 86400 }
+  "Other Proxy": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Other_Proxy.yaml', path: ./Rules/Other Proxy, interval: 86400 }
+  "Other Direct": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Other_Direct.yaml', path: ./Rules/Other Direct, interval: 86400 }
+  
+  # 🎬 流媒体
+  Netflix: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Netflix.yaml', path: ./Rules/Netflix, interval: 86400 }
+  "Disney Plus": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Disney_Plus.yaml', path: ./Rules/Disney Plus, interval: 86400 }
+  YouTube: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/YouTube.yaml', path: ./Rules/YouTube, interval: 86400 }
+  Max: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Max.yaml', path: ./Rules/Max, interval: 86400 }
+  Spotify: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Spotify.yaml', path: ./Rules/Spotify, interval: 86400 }
+  
+  # 🇯🇵 日本媒体
+  "Abema TV": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Abema_TV.yaml', path: ./Rules/Abema TV, interval: 86400 }
+  DMM: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/DMM.yaml', path: ./Rules/DMM, interval: 86400 }
+  "Hulu Japan": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Hulu_Japan.yaml', path: ./Rules/Hulu Japan, interval: 86400 }
+  Japonx: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Japonx.yaml', path: ./Rules/Japonx, interval: 86400 }
+  Niconico: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Niconico.yaml', path: ./Rules/Niconico, interval: 86400 }
+  
+  # 🌺 华语媒体
+  Bahamut: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Bahamut.yaml', path: ./Rules/Bahamut, interval: 86400 }
+  "Fox Plus": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Fox_Plus.yaml', path: ./Rules/Fox Plus, interval: 86400 }
+  "myTV SUPER": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/myTV_SUPER.yaml', path: ./Rules/myTV SUPER, interval: 86400 }
+  ViuTV: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/ViuTV.yaml', path: ./Rules/ViuTV, interval: 86400 }
+  KKTV: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/KKTV.yaml', path: ./Rules/KKTV, interval: 86400 }
+  
+  # 🌏 亚洲媒体
+  IQ: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/IQ.yaml', path: ./Rules/IQ, interval: 86400 }
+  JOOX: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/JOOX.yaml', path: ./Rules/JOOX, interval: 86400 }
+  KKBOX: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/KKBOX.yaml', path: ./Rules/KKBOX, interval: 86400 }
+  "Line TV": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Line_TV.yaml', path: ./Rules/Line TV, interval: 86400 }
+  
+  # 🌍 国际媒体
+  ABC: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/ABC.yaml', path: ./Rules/ABC, interval: 86400 }
+  "BBC iPlayer": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/BBC_iPlayer.yaml', path: ./Rules/BBC iPlayer, interval: 86400 }
+  DAZN: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/DAZN.yaml', path: ./Rules/DAZN, interval: 86400 }
+  "Discovery Plus": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Discovery_Plus.yaml', path: ./Rules/Discovery Plus, interval: 86400 }
+  encoreTVB: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/encoreTVB.yaml', path: ./Rules/encoreTVB, interval: 86400 }
+  "F1 TV": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/F1_TV.yaml', path: ./Rules/F1 TV, interval: 86400 }
+  "Fox Now": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Fox_Now.yaml', path: ./Rules/Fox Now, interval: 86400 }
+  Hulu: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Hulu.yaml', path: ./Rules/Hulu, interval: 86400 }
+  Pandora: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Pandora.yaml', path: ./Rules/Pandora, interval: 86400 }
+  PBS: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/PBS.yaml', path: ./Rules/PBS, interval: 86400 }
+  Pornhub: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Pornhub.yaml', path: ./Rules/Pornhub, interval: 86400 }
+  Soundcloud: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Soundcloud.yaml', path: ./Rules/Soundcloud, interval: 86400 }
+  
+  # 🇨🇳 国内媒体
+  Bilibili: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Bilibili.yaml', path: ./Rules/Bilibili, interval: 86400 }
+  IQIYI: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/IQIYI.yaml', path: ./Rules/IQIYI, interval: 86400 }
+  Letv: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Letv.yaml', path: ./Rules/Letv, interval: 86400 }
+  "Netease Music": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Netease_Music.yaml', path: ./Rules/Netease Music, interval: 86400 }
+  "Tencent Video": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Tencent_Video.yaml', path: ./Rules/Tencent Video, interval: 86400 }
+  WeTV: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/WeTV.yaml', path: ./Rules/WeTV, interval: 86400 }
+  Youku: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Youku.yaml', path: ./Rules/Youku, interval: 86400 }
+  "Domestic Media": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Domestic_Media.yaml', path: ./Rules/Domestic Media, interval: 86400 }
+  
+  # 📱 应用服务
+  Telegram: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Telegram.yaml', path: ./Rules/Telegram, interval: 86400 }
+  Crypto: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Crypto.yaml', path: ./Rules/Crypto, interval: 86400 }
+  Discord: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Discord.yaml', path: ./Rules/Discord, interval: 86400 }
+  "Google FCM": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Google_FCM.yaml', path: ./Rules/Google FCM, interval: 86400 }
+  
+  # 💻 微软服务
+  "Microsoft Email": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Microsoft_Email.yaml', path: ./Rules/Microsoft Email, interval: 86400 }
+  "Microsoft Office": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Microsoft_Office.yaml', path: ./Rules/Microsoft Office, interval: 86400 }
+  "Microsoft Azure": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Microsoft_Azure.yaml', path: ./Rules/Microsoft Azure, interval: 86400 }
+  "Microsoft Other": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Microsoft_Global.yaml', path: ./Rules/Microsoft Other, interval: 86400 }
+  
+  # 🎯 其他服务
+  "AI Suite": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/AI_Suite.yaml', path: ./Rules/AI Suite, interval: 86400 }
+  PayPal: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/PayPal.yaml', path: ./Rules/PayPal, interval: 86400 }
+  Scholar: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Scholar.yaml', path: ./Rules/Scholar, interval: 86400 }
+  Speedtest: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Speedtest.yaml', path: ./Rules/Speedtest, interval: 86400 }
+  TikTok: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/TikTok.yaml', path: ./Rules/TikTok, interval: 86400 }
+  
+  # 🍎 苹果服务
+  "Apple CN": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Apple_CN.yaml', path: ./Rules/Apple CN, interval: 86400 }
+  "iCloud CN": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/iCloud_CN.yaml', path: ./Rules/iCloud CN, interval: 86400 }
+  "Apple Global": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Apple_Global.yaml', path: ./Rules/Apple Global, interval: 86400 }
+  "iCloud Global": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/iCloud_Global.yaml', path: ./Rules/iCloud Global, interval: 86400 }
+  "Apple TV": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Apple_TV.yaml', path: ./Rules/Apple TV, interval: 86400 }
+  
+  # 🎮 游戏
+  miHoYo: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/miHoYo.yaml', path: ./Rules/miHoYo, interval: 86400 }
+  Steam: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Steam.yaml', path: ./Rules/Steam, interval: 86400 }
+  Xbox: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Xbox.yaml', path: ./Rules/Xbox, interval: 86400 }
+  "Global Games": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Global_Games.yaml', path: ./Rules/Global Games, interval: 86400 }
+  
+  # 🌐 基础规则
+  PROXY: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/PROXY.yaml', path: ./Rules/PROXY, interval: 86400 }
+  Domestic: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/Domestic.yaml', path: ./Rules/Domestic, interval: 86400 }
+  LAN: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rules/LAN.yaml', path: ./Rules/LAN, interval: 86400 }
