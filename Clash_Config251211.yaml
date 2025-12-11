@@ -247,114 +247,114 @@ rules:
   
 rule-providers:
   # 🔥 基础规则
-  AdBlock: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/AdBlock.yaml', path: ./Rules/AdBlock, interval: 86400 }
-  HTTPDNS: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/HTTPDNS.yaml', path: ./Rules/HTTPDNS, interval: 86400 }
-  Special: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Special.yaml', path: ./Rules/Special, interval: 86400 }
+  AdBlock: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/AdBlock.yaml', path: ./Rules/AdBlock, interval: 86400 }
+  HTTPDNS: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/HTTPDNS.yaml', path: ./Rules/HTTPDNS, interval: 86400 }
+  Special: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Special.yaml', path: ./Rules/Special, interval: 86400 }
   
   # 🌍 亚马逊
-  "Amazon JP": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Amazon_JP.yaml', path: ./Rules/Amazon JP, interval: 86400 }
-  "Amazon US": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Amazon_US.yaml', path: ./Rules/Amazon US, interval: 86400 }
-  "Amazon Other": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Amazon_Global.yaml', path: ./Rules/Amazon Other, interval: 86400 }
+  "Amazon JP": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Amazon_JP.yaml', path: ./Rules/Amazon JP, interval: 86400 }
+  "Amazon US": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Amazon_US.yaml', path: ./Rules/Amazon US, interval: 86400 }
+  "Amazon Other": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Amazon_Global.yaml', path: ./Rules/Amazon Other, interval: 86400 }
   
   # 🇯🇵 日本
-  "Japan Ecommerce": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Japan_Ecommerce.yaml', path: ./Rules/Japan Ecommerce, interval: 86400 }
-  "Japan Logistics": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Japan_Logistics.yaml', path: ./Rules/Japan Logistics, interval: 86400 }
-  "Other Japan Web": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Other_Japan_Web.yaml', path: ./Rules/Other Japan Web, interval: 86400 }
+  "Japan Ecommerce": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Japan_Ecommerce.yaml', path: ./Rules/Japan Ecommerce, interval: 86400 }
+  "Japan Logistics": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Japan_Logistics.yaml', path: ./Rules/Japan Logistics, interval: 86400 }
+  "Other Japan Web": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Other_Japan_Web.yaml', path: ./Rules/Other Japan Web, interval: 86400 }
   
   # 🖥️ 代理服务器
-  "Multi Server Proxy": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Multi_Server_Proxy.yaml', path: ./Rules/Multi Server Proxy, interval: 86400 }
-  "Single Server Proxy One": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Single_Server_Proxy_1.yaml', path: ./Rules/Single Server Proxy One, interval: 86400 }
-  "Single Server Proxy Two": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Single_Server_Proxy_2.yaml', path: ./Rules/Single Server Proxy Two, interval: 86400 }
-  "Single Server Proxy Three": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Single_Server_Proxy_3.yaml', path: ./Rules/Single Server Proxy Three, interval: 86400 }
-  "Other Proxy": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Other_Proxy.yaml', path: ./Rules/Other Proxy, interval: 86400 }
-  "Other Direct": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Other_Direct.yaml', path: ./Rules/Other Direct, interval: 86400 }
+  "Multi Server Proxy": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Multi_Server_Proxy.yaml', path: ./Rules/Multi Server Proxy, interval: 86400 }
+  "Single Server Proxy One": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Single_Server_Proxy_1.yaml', path: ./Rules/Single Server Proxy One, interval: 86400 }
+  "Single Server Proxy Two": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Single_Server_Proxy_2.yaml', path: ./Rules/Single Server Proxy Two, interval: 86400 }
+  "Single Server Proxy Three": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Single_Server_Proxy_3.yaml', path: ./Rules/Single Server Proxy Three, interval: 86400 }
+  "Other Proxy": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Other_Proxy.yaml', path: ./Rules/Other Proxy, interval: 86400 }
+  "Other Direct": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Other_Direct.yaml', path: ./Rules/Other Direct, interval: 86400 }
   
   # 🎬 流媒体
-  Netflix: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Netflix.yaml', path: ./Rules/Netflix, interval: 86400 }
-  "Disney Plus": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Disney_Plus.yaml', path: ./Rules/Disney Plus, interval: 86400 }
-  YouTube: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/YouTube.yaml', path: ./Rules/YouTube, interval: 86400 }
-  Max: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Max.yaml', path: ./Rules/Max, interval: 86400 }
-  Spotify: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Spotify.yaml', path: ./Rules/Spotify, interval: 86400 }
+  Netflix: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Netflix.yaml', path: ./Rules/Netflix, interval: 86400 }
+  "Disney Plus": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Disney_Plus.yaml', path: ./Rules/Disney Plus, interval: 86400 }
+  YouTube: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/YouTube.yaml', path: ./Rules/YouTube, interval: 86400 }
+  Max: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Max.yaml', path: ./Rules/Max, interval: 86400 }
+  Spotify: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Spotify.yaml', path: ./Rules/Spotify, interval: 86400 }
   
   # 🇯🇵 日本媒体
-  "Abema TV": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Abema_TV.yaml', path: ./Rules/Abema TV, interval: 86400 }
-  DMM: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/DMM.yaml', path: ./Rules/DMM, interval: 86400 }
-  "Hulu Japan": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Hulu_Japan.yaml', path: ./Rules/Hulu Japan, interval: 86400 }
-  Japonx: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Japonx.yaml', path: ./Rules/Japonx, interval: 86400 }
-  Niconico: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Niconico.yaml', path: ./Rules/Niconico, interval: 86400 }
+  "Abema TV": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Abema_TV.yaml', path: ./Rules/Abema TV, interval: 86400 }
+  DMM: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/DMM.yaml', path: ./Rules/DMM, interval: 86400 }
+  "Hulu Japan": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Hulu_Japan.yaml', path: ./Rules/Hulu Japan, interval: 86400 }
+  Japonx: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Japonx.yaml', path: ./Rules/Japonx, interval: 86400 }
+  Niconico: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Niconico.yaml', path: ./Rules/Niconico, interval: 86400 }
   
   # 🌺 华语媒体
-  Bahamut: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Bahamut.yaml', path: ./Rules/Bahamut, interval: 86400 }
-  "Fox Plus": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Fox_Plus.yaml', path: ./Rules/Fox Plus, interval: 86400 }
-  "myTV SUPER": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/myTV_SUPER.yaml', path: ./Rules/myTV SUPER, interval: 86400 }
-  ViuTV: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/ViuTV.yaml', path: ./Rules/ViuTV, interval: 86400 }
-  KKTV: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/KKTV.yaml', path: ./Rules/KKTV, interval: 86400 }
+  Bahamut: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Bahamut.yaml', path: ./Rules/Bahamut, interval: 86400 }
+  "Fox Plus": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Fox_Plus.yaml', path: ./Rules/Fox Plus, interval: 86400 }
+  "myTV SUPER": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/myTV_SUPER.yaml', path: ./Rules/myTV SUPER, interval: 86400 }
+  ViuTV: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/ViuTV.yaml', path: ./Rules/ViuTV, interval: 86400 }
+  KKTV: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/KKTV.yaml', path: ./Rules/KKTV, interval: 86400 }
   
   # 🌏 亚洲媒体
-  IQ: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/IQ.yaml', path: ./Rules/IQ, interval: 86400 }
-  JOOX: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/JOOX.yaml', path: ./Rules/JOOX, interval: 86400 }
-  KKBOX: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/KKBOX.yaml', path: ./Rules/KKBOX, interval: 86400 }
-  "Line TV": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Line_TV.yaml', path: ./Rules/Line TV, interval: 86400 }
+  IQ: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/IQ.yaml', path: ./Rules/IQ, interval: 86400 }
+  JOOX: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/JOOX.yaml', path: ./Rules/JOOX, interval: 86400 }
+  KKBOX: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/KKBOX.yaml', path: ./Rules/KKBOX, interval: 86400 }
+  "Line TV": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Line_TV.yaml', path: ./Rules/Line TV, interval: 86400 }
   
   # 🌍 国际媒体
-  ABC: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/ABC.yaml', path: ./Rules/ABC, interval: 86400 }
-  "BBC iPlayer": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/BBC_iPlayer.yaml', path: ./Rules/BBC iPlayer, interval: 86400 }
-  DAZN: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/DAZN.yaml', path: ./Rules/DAZN, interval: 86400 }
-  "Discovery Plus": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Discovery_Plus.yaml', path: ./Rules/Discovery Plus, interval: 86400 }
-  encoreTVB: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/encoreTVB.yaml', path: ./Rules/encoreTVB, interval: 86400 }
-  "F1 TV": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/F1_TV.yaml', path: ./Rules/F1 TV, interval: 86400 }
-  "Fox Now": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Fox_Now.yaml', path: ./Rules/Fox Now, interval: 86400 }
-  Hulu: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Hulu.yaml', path: ./Rules/Hulu, interval: 86400 }
-  Pandora: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Pandora.yaml', path: ./Rules/Pandora, interval: 86400 }
-  PBS: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/PBS.yaml', path: ./Rules/PBS, interval: 86400 }
-  Pornhub: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Pornhub.yaml', path: ./Rules/Pornhub, interval: 86400 }
-  Soundcloud: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Soundcloud.yaml', path: ./Rules/Soundcloud, interval: 86400 }
+  ABC: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/ABC.yaml', path: ./Rules/ABC, interval: 86400 }
+  "BBC iPlayer": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/BBC_iPlayer.yaml', path: ./Rules/BBC iPlayer, interval: 86400 }
+  DAZN: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/DAZN.yaml', path: ./Rules/DAZN, interval: 86400 }
+  "Discovery Plus": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Discovery_Plus.yaml', path: ./Rules/Discovery Plus, interval: 86400 }
+  encoreTVB: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/encoreTVB.yaml', path: ./Rules/encoreTVB, interval: 86400 }
+  "F1 TV": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/F1_TV.yaml', path: ./Rules/F1 TV, interval: 86400 }
+  "Fox Now": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Fox_Now.yaml', path: ./Rules/Fox Now, interval: 86400 }
+  Hulu: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Hulu.yaml', path: ./Rules/Hulu, interval: 86400 }
+  Pandora: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Pandora.yaml', path: ./Rules/Pandora, interval: 86400 }
+  PBS: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/PBS.yaml', path: ./Rules/PBS, interval: 86400 }
+  Pornhub: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Pornhub.yaml', path: ./Rules/Pornhub, interval: 86400 }
+  Soundcloud: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Soundcloud.yaml', path: ./Rules/Soundcloud, interval: 86400 }
   
   # 🇨🇳 国内媒体
-  Bilibili: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Bilibili.yaml', path: ./Rules/Bilibili, interval: 86400 }
-  IQIYI: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/IQIYI.yaml', path: ./Rules/IQIYI, interval: 86400 }
-  Letv: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Letv.yaml', path: ./Rules/Letv, interval: 86400 }
-  "Netease Music": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Netease_Music.yaml', path: ./Rules/Netease Music, interval: 86400 }
-  "Tencent Video": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Tencent_Video.yaml', path: ./Rules/Tencent Video, interval: 86400 }
-  WeTV: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/WeTV.yaml', path: ./Rules/WeTV, interval: 86400 }
-  Youku: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Youku.yaml', path: ./Rules/Youku, interval: 86400 }
-  "Domestic Media": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Domestic_Media.yaml', path: ./Rules/Domestic Media, interval: 86400 }
+  Bilibili: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Bilibili.yaml', path: ./Rules/Bilibili, interval: 86400 }
+  IQIYI: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/IQIYI.yaml', path: ./Rules/IQIYI, interval: 86400 }
+  Letv: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Letv.yaml', path: ./Rules/Letv, interval: 86400 }
+  "Netease Music": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Netease_Music.yaml', path: ./Rules/Netease Music, interval: 86400 }
+  "Tencent Video": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Tencent_Video.yaml', path: ./Rules/Tencent Video, interval: 86400 }
+  WeTV: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/WeTV.yaml', path: ./Rules/WeTV, interval: 86400 }
+  Youku: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Youku.yaml', path: ./Rules/Youku, interval: 86400 }
+  "Domestic Media": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Domestic_Media.yaml', path: ./Rules/Domestic Media, interval: 86400 }
   
   # 📱 应用服务
-  Telegram: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Telegram.yaml', path: ./Rules/Telegram, interval: 86400 }
-  Crypto: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Crypto.yaml', path: ./Rules/Crypto, interval: 86400 }
-  Discord: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Discord.yaml', path: ./Rules/Discord, interval: 86400 }
-  "Google FCM": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Google_FCM.yaml', path: ./Rules/Google FCM, interval: 86400 }
+  Telegram: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Telegram.yaml', path: ./Rules/Telegram, interval: 86400 }
+  Crypto: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Crypto.yaml', path: ./Rules/Crypto, interval: 86400 }
+  Discord: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Discord.yaml', path: ./Rules/Discord, interval: 86400 }
+  "Google FCM": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Google_FCM.yaml', path: ./Rules/Google FCM, interval: 86400 }
   
   # 💻 微软服务
-  "Microsoft Email": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Microsoft_Email.yaml', path: ./Rules/Microsoft Email, interval: 86400 }
-  "Microsoft Office": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Microsoft_Office.yaml', path: ./Rules/Microsoft Office, interval: 86400 }
-  "Microsoft Azure": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Microsoft_Azure.yaml', path: ./Rules/Microsoft Azure, interval: 86400 }
-  "Microsoft Other": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Microsoft_Global.yaml', path: ./Rules/Microsoft Other, interval: 86400 }
+  "Microsoft Email": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Microsoft_Email.yaml', path: ./Rules/Microsoft Email, interval: 86400 }
+  "Microsoft Office": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Microsoft_Office.yaml', path: ./Rules/Microsoft Office, interval: 86400 }
+  "Microsoft Azure": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Microsoft_Azure.yaml', path: ./Rules/Microsoft Azure, interval: 86400 }
+  "Microsoft Other": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Microsoft_Global.yaml', path: ./Rules/Microsoft Other, interval: 86400 }
   
   # 🎯 其他服务
-  "AI Suite": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/AI_Suite.yaml', path: ./Rules/AI Suite, interval: 86400 }
-  PayPal: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/PayPal.yaml', path: ./Rules/PayPal, interval: 86400 }
-  Scholar: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Scholar.yaml', path: ./Rules/Scholar, interval: 86400 }
-  Speedtest: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Speedtest.yaml', path: ./Rules/Speedtest, interval: 86400 }
-  TikTok: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/TikTok.yaml', path: ./Rules/TikTok, interval: 86400 }
+  "AI Suite": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/AI_Suite.yaml', path: ./Rules/AI Suite, interval: 86400 }
+  PayPal: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/PayPal.yaml', path: ./Rules/PayPal, interval: 86400 }
+  Scholar: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Scholar.yaml', path: ./Rules/Scholar, interval: 86400 }
+  Speedtest: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Speedtest.yaml', path: ./Rules/Speedtest, interval: 86400 }
+  TikTok: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/TikTok.yaml', path: ./Rules/TikTok, interval: 86400 }
   
   # 🍎 苹果服务
-  "Apple CN": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Apple_CN.yaml', path: ./Rules/Apple CN, interval: 86400 }
-  "iCloud CN": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/iCloud_CN.yaml', path: ./Rules/iCloud CN, interval: 86400 }
-  "Apple Global": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Apple_Global.yaml', path: ./Rules/Apple Global, interval: 86400 }
-  "iCloud Global": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/iCloud_Global.yaml', path: ./Rules/iCloud Global, interval: 86400 }
-  "Apple TV": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Apple_TV.yaml', path: ./Rules/Apple TV, interval: 86400 }
+  "Apple CN": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Apple_CN.yaml', path: ./Rules/Apple CN, interval: 86400 }
+  "iCloud CN": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/iCloud_CN.yaml', path: ./Rules/iCloud CN, interval: 86400 }
+  "Apple Global": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Apple_Global.yaml', path: ./Rules/Apple Global, interval: 86400 }
+  "iCloud Global": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/iCloud_Global.yaml', path: ./Rules/iCloud Global, interval: 86400 }
+  "Apple TV": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Apple_TV.yaml', path: ./Rules/Apple TV, interval: 86400 }
   
   # 🎮 游戏
-  miHoYo: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/miHoYo.yaml', path: ./Rules/miHoYo, interval: 86400 }
-  Steam: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Steam.yaml', path: ./Rules/Steam, interval: 86400 }
-  Xbox: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Xbox.yaml', path: ./Rules/Xbox, interval: 86400 }
-  "Global Games": { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Global_Games.yaml', path: ./Rules/Global Games, interval: 86400 }
+  miHoYo: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/miHoYo.yaml', path: ./Rules/miHoYo, interval: 86400 }
+  Steam: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Steam.yaml', path: ./Rules/Steam, interval: 86400 }
+  Xbox: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Xbox.yaml', path: ./Rules/Xbox, interval: 86400 }
+  "Global Games": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Global_Games.yaml', path: ./Rules/Global Games, interval: 86400 }
   
   # 🌐 基础规则
-  PROXY: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/PROXY.yaml', path: ./Rules/PROXY, interval: 86400 }
-  Domestic: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/Domestic.yaml', path: ./Rules/Domestic, interval: 86400 }
-  LAN: { type: http, behavior: classical, url: 'https://github.com/s11214/rules/releases/download/clash_rule_providers/LAN.yaml', path: ./Rules/LAN, interval: 86400 }
+  PROXY: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/PROXY.yaml', path: ./Rules/PROXY, interval: 86400 }
+  Domestic: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Domestic.yaml', path: ./Rules/Domestic, interval: 86400 }
+  LAN: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/LAN.yaml', path: ./Rules/LAN, interval: 86400 }
 
 
