@@ -149,11 +149,6 @@ payload:
   # > CookieYes
   - DOMAIN-KEYWORD,cookieyes
   
-  # > 雷蛇
-  - DOMAIN-SUFFIX,razer.com
-  - DOMAIN-SUFFIX,fs.razersynapse.com
-  - DOMAIN-KEYWORD,razer
-  
   # > Opera
   - DOMAIN-SUFFIX,opera.com
   - DOMAIN-SUFFIX,operacdn.com
@@ -173,5 +168,6 @@ payload:
   # Creative
 
   - DOMAIN-SUFFIX,creative.com
+
 
 
