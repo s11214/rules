@@ -7,3 +7,5 @@ payload:
 
   # ads用的
   - DOMAIN-SUFFIX,ns1.name
+  - DOMAIN-SUFFIX,ipmars.vip
+
