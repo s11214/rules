@@ -1,6 +1,9 @@
 payload:
   # > 文件管理
   - DOMAIN-SUFFIX,files.navpage.top
+
+  # > Adobe
+  - DOMAIN-SUFFIX,scene7.com
   
   # > ip检测
   - DOMAIN-SUFFIX,api64.ipify.org
@@ -168,6 +171,7 @@ payload:
   # Creative
 
   - DOMAIN-SUFFIX,creative.com
+
 
 
 
