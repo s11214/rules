@@ -1,5 +1,6 @@
 payload:
-  - IP-CIDR,43.130.57.38/32,no-resolve  # lumi
+  # lumi
+  - IP-CIDR,43.130.57.38/32,no-resolve
 
   # 自己专线
   - DOMAIN-SUFFIX,fxdx.in
@@ -8,4 +9,3 @@ payload:
   # ads用的
   - DOMAIN-SUFFIX,ns1.name
   - DOMAIN-SUFFIX,ipmars.vip
-
