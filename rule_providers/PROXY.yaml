@@ -1,8 +1,4 @@
 payload:
-  # > DNS
-  - DOMAIN-SUFFIX,1.1.1.1
-  - DOMAIN-SUFFIX,dns.google
-  
   # - USER-AGENT,hearthstone*
   - DOMAIN,cdp.cloud.unity3d.com
   - DOMAIN-SUFFIX,battle.net
@@ -779,4 +775,5 @@ payload:
   - IP-CIDR,174.37.0.0/16,no-resolve
 
   - IP-CIDR,208.43.0.0/16,no-resolve
+
 
