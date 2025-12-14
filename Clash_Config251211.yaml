@@ -89,6 +89,8 @@ proxy-groups:
   - {name: 单服务器代理1, type: select, proxies: [日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 美国, 其它地区]}
   - {name: 单服务器代理2, type: select, proxies: [日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 美国, 其它地区]}
   - {name: 单服务器代理3, type: select, proxies: [日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 美国, 其它地区]}
+  - {name: 自建住宅1, type: select, proxies: [新加坡, 日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 美国, 其它地区]}
+  - {name: 自建住宅2, type: select, proxies: [新加坡, 日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 美国, 其它地区]}
   - {name: 日本物流, type: select, proxies: [日本, 日本2, 直连, 默认代理, 香港, 香港2, 台湾, 日本稳定连接, 新加坡, 美国, 其它地区]}
   - {name: AI相关, type: select, proxies: [默认代理, 直连, 香港稳定连接, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
   - {name: 微软邮箱, type: select, proxies: [默认代理, 直连, 香港, 台湾, 日本, 新加坡, 美国, 其它地区]}
@@ -152,11 +154,15 @@ rules:
   
   - RULE-SET,Multi Server Proxy,多服务器代理
   
-  - RULE-SET,Single Server Proxy One,单服务器代理1
+  - RULE-SET,Single Server Proxy 1,单服务器代理1
   
-  - RULE-SET,Single Server Proxy Two,单服务器代理2
+  - RULE-SET,Single Server Proxy 2,单服务器代理2
   
-  - RULE-SET,Single Server Proxy Three,单服务器代理3
+  - RULE-SET,Single Server Proxy 3,单服务器代理3
+  
+  - RULE-SET,My Residential 1,自建住宅1
+  
+  - RULE-SET,My Residential 2,自建住宅2
   
   - RULE-SET,Other Proxy,其他代理站点
   
@@ -263,9 +269,11 @@ rule-providers:
   
   # 🖥️ 代理服务器
   "Multi Server Proxy": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Multi_Server_Proxy.yaml', path: ./Rules/Multi Server Proxy, interval: 86400 }
-  "Single Server Proxy One": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Single_Server_Proxy_1.yaml', path: ./Rules/Single Server Proxy One, interval: 86400 }
-  "Single Server Proxy Two": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Single_Server_Proxy_2.yaml', path: ./Rules/Single Server Proxy Two, interval: 86400 }
-  "Single Server Proxy Three": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Single_Server_Proxy_3.yaml', path: ./Rules/Single Server Proxy Three, interval: 86400 }
+  "Single Server Proxy 1": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Single_Server_Proxy_1.yaml', path: ./Rules/Single Server Proxy 1, interval: 86400 }
+  "Single Server Proxy 2": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Single_Server_Proxy_2.yaml', path: ./Rules/Single Server Proxy 2, interval: 86400 }
+  "Single Server Proxy 3": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Single_Server_Proxy_3.yaml', path: ./Rules/Single Server Proxy 3, interval: 86400 }
+  "My Residential 1": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/My_Residential_1.yaml', path: ./Rules/My Residential 1, interval: 86400 }
+  "My Residential 2": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/My_Residential_2.yaml', path: ./Rules/My Residential 2, interval: 86400 }
   "Other Proxy": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Other_Proxy.yaml', path: ./Rules/Other Proxy, interval: 86400 }
   "Other Direct": { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Other_Direct.yaml', path: ./Rules/Other Direct, interval: 86400 }
   
@@ -356,5 +364,3 @@ rule-providers:
   PROXY: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/PROXY.yaml', path: ./Rules/PROXY, interval: 86400 }
   Domestic: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/Domestic.yaml', path: ./Rules/Domestic, interval: 86400 }
   LAN: { type: http, behavior: classical, url: 'https://raw.githubusercontent.com/s11214/rules/main/rule_providers/LAN.yaml', path: ./Rules/LAN, interval: 86400 }
-
-
