@@ -1,4 +1,4 @@
 payload:
   # > 自己专线
   - DOMAIN-SUFFIX,fxdx.in
-  - IP-CIDR,138.2.16.164/32,no-resolve
+
