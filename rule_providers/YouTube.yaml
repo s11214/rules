@@ -1,4 +1,8 @@
 payload:
+  # > Twitch
+  - DOMAIN-SUFFIX,twitchcdn.net
+  - DOMAIN-SUFFIX,twitch.tv
+  
   # > Youtube
   - PROCESS-NAME,com.google.android.youtube
   - PROCESS-NAME,com.google.android.youtube.tv
@@ -166,4 +170,5 @@ payload:
   - DOMAIN-SUFFIX,youtube-ui.l.google.com
   - DOMAIN-SUFFIX,yt.be
   - DOMAIN-SUFFIX,yt3.ggpht.com
+
   - DOMAIN-SUFFIX,ytimg.com
