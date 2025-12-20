@@ -14,7 +14,7 @@ payload:
   - DOMAIN-SUFFIX,channel.io
   
   # 不知道哪来的
+  #   - DOMAIN-SUFFIX,yangliq.com
 
-  - DOMAIN-SUFFIX,yangliq.com
 
 
