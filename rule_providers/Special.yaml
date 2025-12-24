@@ -1,6 +1,7 @@
 payload:
   # > CF穿透
-  - DOMAIN-SUFFIX,files.navpag1e.top
+  - DOMAIN-SUFFIX,argotunnel.com
+  - IP-CIDR,198.41.200.0/24,no-resolve
 
   # > 文件管理
   - DOMAIN-SUFFIX,files.navpage.top
@@ -174,6 +175,7 @@ payload:
   # Creative
 
   - DOMAIN-SUFFIX,creative.com
+
 
 
 
