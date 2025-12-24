@@ -4,8 +4,8 @@ payload:
   - DOMAIN-SUFFIX,limaopay.com
   - DOMAIN-SUFFIX,ucoins.cc
   - DOMAIN-SUFFIX,777-k.com
-  - DOMAIN-SUFFIX,navpage.top
   - DOMAIN-KEYWORD,ucoins
 
   - DST-PORT,6500
+
 
