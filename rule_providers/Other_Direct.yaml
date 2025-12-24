@@ -13,8 +13,10 @@ payload:
   # Channel Talk
   - DOMAIN-SUFFIX,channel.io
   
-  # 不知道哪来的
-  #   - DOMAIN-SUFFIX,yangliq.com
+  # > CF穿透
+  - SRC-IP-CIDR,172.18.0.5/32,DIRECT,no-resolve
+
+
 
 
 
