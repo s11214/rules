@@ -8,6 +8,10 @@ payload:
   - DOMAIN-SUFFIX,chatgpt.com
   - DOMAIN-SUFFIX,openai.com
 
+  # > Trea
+  - DOMAIN-SUFFIX,trae.ai
+  - DOMAIN-SUFFIX,traecdn.ai
+  
   # > ChatGPT API & CDN
   - DOMAIN,chat.openai.com.cdn.cloudflare.net
   - DOMAIN,openaiapi-site.azureedge.net
