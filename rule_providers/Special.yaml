@@ -69,6 +69,11 @@ payload:
   - DOMAIN,steamusercontent-a.akamaihd.net
   - DOMAIN,steamuserimages-a.akamaihd.net
 
+  - DOMAIN-SUFFIX,pphimalayanrt.com
+  - DOMAIN-SUFFIX,xz.pphimalayanrt.com
+  - DOMAIN-SUFFIX,gstore.val.manlaxy.com
+  
+
   # > Tesla
   - DOMAIN,tesla-cdn.thron.cn
   - DOMAIN,tesla-cdn.thron.com
@@ -174,6 +179,7 @@ payload:
   # Creative
 
   - DOMAIN-SUFFIX,creative.com
+
 
 
 
