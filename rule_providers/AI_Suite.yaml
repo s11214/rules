@@ -1,5 +1,9 @@
 payload:
   # > Augment
+  - DOMAIN-SUFFIX,pypi.org
+  - DOMAIN-SUFFIX,pythonhosted.org
+  
+  # > Augment
   - DOMAIN-SUFFIX,augment.com
   - DOMAIN-SUFFIX,augmentcode.com
 
