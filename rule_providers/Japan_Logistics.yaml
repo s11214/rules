@@ -51,4 +51,6 @@ payload:
   # > 🌐 物流追踪平台
   - DOMAIN-SUFFIX,takkyubin.sagawa-exp.co.jp
   - DOMAIN-SUFFIX,track.kuronekoyamato.co.jp
+
   - DOMAIN-SUFFIX,tracking.post.japanpost.jp
+  - DOMAIN-SUFFIX,y-track.jp
