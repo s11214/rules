@@ -13,4 +13,10 @@ payload:
   # Channel Talk
   - DOMAIN-SUFFIX,channel.io
 
+  # 远程桌面
+  - IP-CIDR,20.243.25.166/32,no-resolve
+  - IP-CIDR,20.109.59.185/32,no-resolve
+  - IP-CIDR,85.234.83.195/32,no-resolve
+  - IP-CIDR,85.234.83.150/32,no-resolve
+  - IP-CIDR,85.234.83.124/32,no-resolve
 
