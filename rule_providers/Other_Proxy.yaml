@@ -8,5 +8,8 @@ payload:
 
   - DST-PORT,6500
   - DOMAIN-SUFFIX,navpage.top
+  - IP-CIDR,85.234.83.195/32,no-resolve
+  - IP-CIDR,85.234.83.150/32,no-resolve
+  - IP-CIDR,85.234.83.124/32,no-resolve
 
 
