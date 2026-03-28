@@ -1,4 +1,8 @@
 payload:
+  # 邮件服务器
+  - DOMAIN,imap.mail.yahoo.com
+  - DOMAIN,imap.aol.com
+  
   # > 📱 LINE (Naver系)
   - DOMAIN-SUFFIX,line.naver.jp
   - DOMAIN-SUFFIX,nhncorp.jp
