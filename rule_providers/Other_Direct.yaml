@@ -12,4 +12,6 @@ payload:
   # 远程桌面
   - IP-CIDR,20.243.25.166/32,no-resolve
   - IP-CIDR,20.109.59.185/32,no-resolve
-
+  
+  # 盛九换ip
+  - IP-CIDR,192.88.100.254/32,no-resolve
