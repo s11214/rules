@@ -11,5 +11,7 @@ payload:
   - IP-CIDR,85.234.83.195/32,no-resolve
   - IP-CIDR,85.234.83.150/32,no-resolve
   - IP-CIDR,85.234.83.124/32,no-resolve
-
+  
+  # > 其他代理站点
+  - DOMAIN-SUFFIX,gethomepage.dev
 
