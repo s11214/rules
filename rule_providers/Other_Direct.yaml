@@ -15,3 +15,6 @@ payload:
   
   # 盛九换ip
   - IP-CIDR,192.88.100.254/32,no-resolve
+
+  # 后台
+  - IP-CIDR,118.194.228.43/32,no-resolve
