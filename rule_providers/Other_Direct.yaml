@@ -2,9 +2,16 @@ payload:
   # 虚拟机克隆服务器
   - DOMAIN-SUFFIX,vm.698138.xyz
   - DOMAIN-SUFFIX,328138.xyz
-  
+
+  # 跨境通
   - DOMAIN-SUFFIX,seller.kuajingmaihuo.com
   - DOMAIN-SUFFIX,kuajingmaihuo.com
+
+  # 导航页测IP
+  - DOMAIN-SUFFIX,ipv4.gdt.qq.com
+  - DOMAIN-SUFFIX,ipinfo.io
+  - DOMAIN-SUFFIX,ifconfig.me
+  - DOMAIN-SUFFIX,api64.ipify.org
   
   # Channel Talk
   - DOMAIN-SUFFIX,channel.io
