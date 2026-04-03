@@ -7,7 +7,8 @@ payload:
   - DOMAIN-SUFFIX,seller.kuajingmaihuo.com
   - DOMAIN-SUFFIX,kuajingmaihuo.com
 
-  # 导航页测IP
+  # 导航页以及其测IP
+  - DOMAIN-SUFFIX,navpage.top
   - DOMAIN-SUFFIX,ipv4.gdt.qq.com
   - DOMAIN-SUFFIX,ipinfo.io
   - DOMAIN-SUFFIX,ifconfig.me
