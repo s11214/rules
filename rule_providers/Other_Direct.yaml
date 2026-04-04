@@ -28,4 +28,4 @@ payload:
   - IP-CIDR,118.194.228.43/32,no-resolve
 
   # cloudflare隧道
-  - SRC-IP-CIDR,172.18.0.4/32,no-resolve
+  - SRC-IP-CIDR,172.18.0.8/32,no-resolve
