@@ -1,14 +1,45 @@
 payload:
-  # > webshare.io
-  - DOMAIN-SUFFIX,webshare.io
+    # > webshare.io
+    - DOMAIN-SUFFIX,webshare.io
 
-  # > webshare.io IP ranges (work usage)
-  - IP-CIDR,45.38.111.0/24,no-resolve
-  - IP-CIDR,45.39.73.0/24,no-resolve
-  - IP-CIDR,45.39.75.0/24,no-resolve
-  - IP-CIDR,82.21.231.0/24,no-resolve
-  - IP-CIDR,82.29.223.0/24,no-resolve
-  - IP-CIDR,92.113.231.0/24,no-resolve
-  - IP-CIDR,92.113.241.0/24,no-resolve
-  - IP-CIDR,92.113.246.0/24,no-resolve
-  - IP-CIDR,104.252.149.0/24,no-resolve
+    # > webshare.io IP ranges (work usage) singpore
+    - IP-CIDR,45.38.111.0/24,no-resolve
+    - IP-CIDR,45.39.73.0/24,no-resolve
+    - IP-CIDR,45.39.75.0/24,no-resolve
+    - IP-CIDR,82.21.231.0/24,no-resolve
+    - IP-CIDR,82.29.223.0/24,no-resolve
+    - IP-CIDR,92.113.231.0/24,no-resolve
+    - IP-CIDR,92.113.241.0/24,no-resolve
+    - IP-CIDR,92.113.246.0/24,no-resolve
+    - IP-CIDR,104.252.149.0/24,no-resolve
+
+    # > webshare.io IP ranges (work usage) japan
+    - IP-CIDR,167.100.105.0/24,no-resolve
+    - IP-CIDR,23.27.127.0/24,no-resolve
+    - IP-CIDR,192.95.91.0/24,no-resolve
+    - IP-CIDR,31.57.90.0/24,no-resolve
+    - IP-CIDR,195.40.70.0/24,no-resolve
+    - IP-CIDR,23.26.46.0/24,no-resolve
+    - IP-CIDR,195.40.123.0/24,no-resolve
+    - IP-CIDR,195.40.121.0/24,no-resolve
+    - IP-CIDR,92.112.90.0/24,no-resolve
+    - IP-CIDR,195.40.71.0/24,no-resolve
+    - IP-CIDR,142.111.208.0/24,no-resolve
+    - IP-CIDR,167.100.106.0/24,no-resolve
+    - IP-CIDR,142.111.67.0/24,no-resolve
+    - IP-CIDR,195.40.122.0/24,no-resolve
+    - IP-CIDR,161.123.208.0/24,no-resolve
+    - IP-CIDR,46.203.52.0/24,no-resolve
+    - IP-CIDR,206.232.74.0/24,no-resolve
+    - IP-CIDR,92.112.94.0/24,no-resolve
+    - IP-CIDR,166.88.149.0/24,no-resolve
+    - IP-CIDR,195.172.211.0/24,no-resolve
+    - IP-CIDR,92.112.110.0/24,no-resolve
+    - IP-CIDR,108.165.181.0/24,no-resolve
+    - IP-CIDR,46.203.28.0/24,no-resolve
+    - IP-CIDR,50.114.92.0/24,no-resolve
+    - IP-CIDR,108.165.87.0/24,no-resolve
+    - IP-CIDR,23.26.61.0/24,no-resolve
+    - IP-CIDR,161.123.209.0/24,no-resolve
+    - IP-CIDR,145.223.40.0/24,no-resolve
+    - IP-CIDR,147.136.85.0/24,no-resolve
