@@ -15,6 +15,7 @@ payload:
 
     # > webshare.io IP ranges (work usage) japan
     - IP-CIDR,167.100.105.0/24,no-resolve
+    - IP-CIDR,195.40.121.0/24,no-resolve
     - IP-CIDR,23.27.127.0/24,no-resolve
     - IP-CIDR,192.95.91.0/24,no-resolve
     - IP-CIDR,31.57.90.0/24,no-resolve
