@@ -2,6 +2,7 @@ payload:
   # POVO
   - DOMAIN-SUFFIX,povo.jp
   - DOMAIN-KEYWORD,povo
+  - DOMAIN-SUFFIX,applesubs.com
   
   # 邮件服务器
   - DOMAIN,imap.mail.yahoo.com
