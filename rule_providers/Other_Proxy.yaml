@@ -15,6 +15,4 @@ payload:
   # > 其他代理站点
   - DOMAIN-SUFFIX,gethomepage.dev
 
-  
-  - IP-CIDR,128.1.49.204/32,no-resolve
 
