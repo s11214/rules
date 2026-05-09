@@ -29,6 +29,7 @@ payload:
 
   # 后台
   - IP-CIDR,107.155.15.64/32,no-resolve
+  - DOMAIN-SUFFIX,ucloud.cn
 
   # cloudflare隧道
   - SRC-IP-CIDR,172.18.0.0/24,no-resolve
