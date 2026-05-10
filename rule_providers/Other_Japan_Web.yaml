@@ -80,6 +80,9 @@ payload:
   - DOMAIN-SUFFIX,bandainamcoent.co.jp
   - DOMAIN-SUFFIX,konami.com
 
+  # > 电商
+  - DOMAIN-SUFFIX,saiyasune.com
+  
   # > IP段（日本相关）
   - IP-CIDR,43.159.190.204/32,no-resolve
   - IP-CIDR,43.134.89.226/32,no-resolve
