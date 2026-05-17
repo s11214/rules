@@ -3,6 +3,9 @@ payload:
   - DOMAIN-SUFFIX,povo.jp
   - DOMAIN-KEYWORD,povo
   - DOMAIN-SUFFIX,applesubs.com
+
+  # 后台
+  - IP-CIDR,107.155.15.64/32,no-resolve
   
   # 邮件服务器
   - DOMAIN,imap.mail.yahoo.com
