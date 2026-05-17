@@ -28,7 +28,6 @@ payload:
   - IP-CIDR,192.88.100.254/32,no-resolve
 
   # 后台
-  - IP-CIDR,107.155.15.64/32,no-resolve
   - IP-CIDR,128.1.49.204/32,no-resolve
   - DOMAIN-SUFFIX,ucloud.cn
 
