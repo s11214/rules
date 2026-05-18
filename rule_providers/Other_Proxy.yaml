@@ -15,5 +15,4 @@ payload:
   # > 其他代理站点
   - DOMAIN-SUFFIX,gethomepage.dev
   - DOMAIN-SUFFIX,godaddy.com
-  - DOMAIN-SUFFIX,agentseller.temu.com
-
+  - DOMAIN-SUFFIX,temu.com
