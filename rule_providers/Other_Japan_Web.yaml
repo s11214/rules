@@ -56,6 +56,8 @@ payload:
   - DOMAIN-SUFFIX,tabtter.jp
   - DOMAIN-SUFFIX,news.livedoor.com
   - DOMAIN-SUFFIX,kuku.lu
+  - DOMAIN-SUFFIX,yahoo.com
+  - DOMAIN-SUFFIX,yahooapis.com
 
   # > 🏢 企业服务
   - DOMAIN-SUFFIX,tokyocn.com
