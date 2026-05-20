@@ -8,6 +8,7 @@ payload:
   - IP-CIDR,107.155.15.64/32,no-resolve
   - IP-CIDR,103.115.18.201/32,no-resolve
   - IP-CIDR,185.141.219.17/32,no-resolve
+  - IP-CIDR,128.1.49.204/32,no-resolve
   
   # 邮件服务器
   - DOMAIN,imap.mail.yahoo.com
