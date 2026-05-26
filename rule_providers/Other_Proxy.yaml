@@ -17,3 +17,7 @@ payload:
   - DOMAIN-SUFFIX,gethomepage.dev
   - DOMAIN-SUFFIX,godaddy.com
   - DOMAIN-SUFFIX,temu.com
+
+  # > 海淘助手
+  - DOMAIN-SUFFIX,myqcloud.com
+  - IP-CIDR,58.63.250.223/32,no-resolve
