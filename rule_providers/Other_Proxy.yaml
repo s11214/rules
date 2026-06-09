@@ -5,6 +5,10 @@ payload:
   - DOMAIN-SUFFIX,ucoins.cc
   - DOMAIN-SUFFIX,777-k.com
   - DOMAIN-KEYWORD,ucoins
+  
+  # 邮件服务器
+  - DOMAIN,imap.mail.yahoo.com
+  - DOMAIN,imap.aol.com
 
   - DST-PORT,6500
   - DOMAIN-SUFFIX,navpage.top
