@@ -6,6 +6,8 @@ payload:
 
   # 后台
   - IP-CIDR,107.155.15.64/32,no-resolve
+  - IP-CIDR,103.231.12.38/32,no-resolve
+  - IP-CIDR,103.231.12.66/32,no-resolve
   - IP-CIDR,103.115.18.201/32,no-resolve
   - IP-CIDR,185.141.219.17/32,no-resolve
   - IP-CIDR,128.1.49.204/32,no-resolve
