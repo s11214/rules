@@ -1,6 +1,9 @@
 payload:
   # GOdaddy付款支付宝
   - DOMAIN-SUFFIX,checkoutshopper-live-us.adyen.com
+
+  # 盛九VNC
+  - DOMAIN-SUFFIX,s9yun.com
   
   # 虚拟机克隆服务器
   - DOMAIN-SUFFIX,vm.698138.xyz
