@@ -1,6 +1,7 @@
 payload:
   # POVO
   - DOMAIN-SUFFIX,povo.jp
+  - DOMAIN-SUFFIX,rakumy.com
   - DOMAIN-KEYWORD,povo
   - DOMAIN-SUFFIX,applesubs.com
 
