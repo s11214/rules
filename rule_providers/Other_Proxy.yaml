@@ -4,7 +4,9 @@ payload:
   - DOMAIN-SUFFIX,limaopay.com
   - DOMAIN-SUFFIX,ucoins.cc
   - DOMAIN-SUFFIX,777-k.com
+  - DOMAIN-SUFFIX,ja4db.com
   - DOMAIN-KEYWORD,ucoins
+
   
   # 邮件服务器
   - DOMAIN,imap.mail.yahoo.com
