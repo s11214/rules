@@ -3,7 +3,6 @@ payload:
   - IP-CIDR,43.130.57.38/32,no-resolve
 
   # ads用的
-  - DOMAIN-SUFFIX,ns1.name
   - DOMAIN-SUFFIX,ipmars.vip
 
   # 小明用的
