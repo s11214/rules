@@ -5,9 +5,6 @@ payload:
   # 盛九VNC
   - DOMAIN-SUFFIX,s9yun.com
   
-  # 911VNC
-  - DOMAIN-SUFFIX,ns1.name
-  
   # 虚拟机克隆服务器
   - DOMAIN-SUFFIX,vm.698138.xyz
   - DOMAIN-SUFFIX,328138.xyz
