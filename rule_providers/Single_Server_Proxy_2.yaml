@@ -9,4 +9,4 @@ payload:
   - IP-CIDR,138.2.16.164/32,no-resolve
 
   # 911VNC
-  - AND,((DOMAIN,911wgu.ns1.name),(DST-PORT,17733))
+  - DOMAIN,911wgu.ns1.name
