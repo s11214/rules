@@ -4,9 +4,6 @@ payload:
 
   # 盛九VNC
   - DOMAIN-SUFFIX,s9yun.com
-
-  # 911Vnc
-  - AND,((DOMAIN,911wgu.ns1.name),(DST-PORT,7733))
   
   # 虚拟机克隆服务器
   - DOMAIN-SUFFIX,vm.698138.xyz
