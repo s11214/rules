@@ -7,6 +7,3 @@ payload:
 
   # 小明用的
   - IP-CIDR,138.2.16.164/32,no-resolve
-
-  # 911VNC
-  - DOMAIN,911wgu.ns1.name
