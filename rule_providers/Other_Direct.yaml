@@ -31,8 +31,6 @@ payload:
   # 盛九换ip
   - IP-CIDR,192.88.100.254/32,no-resolve
 
-  # 后台
-  - DOMAIN-SUFFIX,ucloud.cn
 
   # cloudflare隧道
   - SRC-IP-CIDR,172.18.0.0/24,no-resolve
