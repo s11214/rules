@@ -39,3 +39,7 @@ payload:
 
   # cloudflare隧道
   - SRC-IP-CIDR,172.18.0.0/24,no-resolve
+
+  
+  - IP-CIDR,103.231.12.38/32,no-resolve
+  - IP-CIDR,103.59.103.76/32,no-resolve
