@@ -25,7 +25,11 @@ payload:
   - DOMAIN-SUFFIX,api64.ipify.org
   
   # Channel Talk
-  - DOMAIN-SUFFIX,channel.io
+  - DOMAIN-SUFFIX,channel.io  
+  
+  # 邮件服务器
+  - DOMAIN,imap.mail.yahoo.com
+  - DOMAIN,imap.aol.com
 
   
   # 盛九换ip
