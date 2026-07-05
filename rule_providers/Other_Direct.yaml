@@ -8,6 +8,11 @@ payload:
   # 911Vnc
   - AND,((DOMAIN,911wgu.ns1.name),(DST-PORT,7733))
   - AND,((DOMAIN,911wgu.ns1.name),(DST-PORT,27733))
+
+  # 金山办公
+  - DOMAIN-KEYWORD,kdocs
+  - DOMAIN-SUFFIX,kdocs.cn
+  - DOMAIN-SUFFIX,wps.cn
   
   # 虚拟机克隆服务器
   - DOMAIN-SUFFIX,vm.698138.xyz
@@ -44,3 +49,4 @@ payload:
   - IP-CIDR,103.59.103.76/32,no-resolve
   - IP-CIDR,45.119.53.136/32,no-resolve
   - IP-CIDR,103.231.12.86/32,no-resolve
+
