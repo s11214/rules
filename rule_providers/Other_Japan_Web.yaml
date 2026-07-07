@@ -99,5 +99,6 @@ payload:
   - IP-CIDR,160.16.0.0/13,no-resolve
   - IP-CIDR,182.236.0.0/15,no-resolve
   - IP-CIDR,203.183.0.0/16,no-resolve
+  - IP-CIDR,45.76.110.209/24,no-resolve
 
   - IP-CIDR6,2400:2410::/32,no-resolve
