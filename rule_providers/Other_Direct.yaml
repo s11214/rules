@@ -2,6 +2,9 @@ payload:
   # GOdaddy付款支付宝
   - DOMAIN-SUFFIX,checkoutshopper-live-us.adyen.com
 
+  # 接码
+  - DOMAIN-SUFFIX,ejiema.com
+
   # 盛九VNC
   - DOMAIN-SUFFIX,s9yun.com
 
