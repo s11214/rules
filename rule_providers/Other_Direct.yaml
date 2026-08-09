@@ -2,6 +2,9 @@ payload:
   # GOdaddy付款支付宝
   - DOMAIN-SUFFIX,checkoutshopper-live-us.adyen.com
 
+  # 工具集服务器
+  - IP-CIDR,103.59.103.49/32,no-resolve
+
   # 接码
   - DOMAIN-SUFFIX,ejiema.com
 
