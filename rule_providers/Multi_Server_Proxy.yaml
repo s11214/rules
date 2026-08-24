@@ -8,6 +8,8 @@ payload:
   - DOMAIN-KEYWORD,smartproxy
   - DOMAIN-SUFFIX,smartproxycn.com
   - DOMAIN-SUFFIX,as.smartproxycn.com
+  - DOMAIN-SUFFIX,proxy.cc
+  - DOMAIN-SUFFIX,gw.proxy.cc
   
   - DOMAIN-KEYWORD,abcproxy
   - DOMAIN-SUFFIX,abcproxy.com
