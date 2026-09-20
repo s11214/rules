@@ -23,3 +23,6 @@ payload:
   # > 海淘助手
   - DOMAIN-SUFFIX,myqcloud.com
   - IP-CIDR,58.63.250.223/32,no-resolve
+
+  # > 后台
+  - IP-CIDR,103.231.12.66/32,no-resolve
