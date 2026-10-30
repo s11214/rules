@@ -8,6 +8,9 @@ payload:
   # 接码
   - DOMAIN-SUFFIX,ejiema.com
 
+  # lumi
+  - DOMAIN-SUFFIX,superproxy.io
+
   # 盛九VNC
   - DOMAIN-SUFFIX,s9yun.com
 
