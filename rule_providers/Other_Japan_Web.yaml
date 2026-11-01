@@ -12,6 +12,9 @@ payload:
   - IP-CIDR,103.115.18.201/32,no-resolve
   - IP-CIDR,185.141.219.17/32,no-resolve
   - IP-CIDR,128.1.49.204/32,no-resolve
+
+  # rust
+  - IP-CIDR,43.165.175.185/32,no-resolve
   
   # > 📱 LINE (Naver系)
   - DOMAIN-SUFFIX,line.naver.jp
