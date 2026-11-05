@@ -5,6 +5,9 @@ payload:
   # 工具集服务器
   - IP-CIDR,103.59.103.49/32,no-resolve
 
+  # 工具集服务器
+  - DOMAIN-SUFFIX,day666.ggff.net
+
   # 接码
   - DOMAIN-SUFFIX,ejiema.com
 
