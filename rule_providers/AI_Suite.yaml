@@ -7,6 +7,9 @@ payload:
   - DOMAIN-SUFFIX,augment.com
   - DOMAIN-SUFFIX,augmentcode.com
 
+  # Day中转站
+  - DOMAIN-SUFFIX,day666.ggff.net
+  
   # > ChatGPT
   - DOMAIN-SUFFIX,ai.com
   - DOMAIN-SUFFIX,chatgpt.com
